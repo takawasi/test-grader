@@ -11,6 +11,7 @@ from .scorer import score_file
 from .output import print_report, to_json
 
 console = Console()
+console_err = Console(stderr=True)
 
 
 @click.command()
@@ -56,10 +57,10 @@ def main(path: str, min_score: int, output_format: str, verbose: bool):
     )]
 
     if not test_files:
-        console.print("[yellow]No test files found.[/yellow]", file=sys.stderr)
+        console_err.print("[yellow]No test files found.[/yellow]")
         return
 
-    console.print(f"[dim]Analyzing {len(test_files)} test files...[/dim]", file=sys.stderr)
+    console_err.print(f"[dim]Analyzing {len(test_files)} test files...[/dim]")
 
     # Analyze and score
     scores = []
