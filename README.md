@@ -92,6 +92,10 @@ test-grader ./tests --verbose
 | Python | `test_*.py`, `*_test.py` |
 | JavaScript | `*.test.js`, `*.spec.js`, `*.test.ts`, `*.spec.ts` |
 
+## More Tools
+
+See all dev tools: https://takawasi-social.com/en/
+
 ## License
 
 MIT
