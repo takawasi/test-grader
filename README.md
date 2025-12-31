@@ -1,5 +1,7 @@
 # test-grader
 
+> **Documentation**: https://takawasi-social.com/tools/test-grader/
+
 Grade AI-generated tests for quality before they break production.
 
 AI-generated tests often pass but test nothing. Catch them early.
